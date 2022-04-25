@@ -2,7 +2,7 @@ const onlineCount = document.getElementById('online_count')
 const input = document.getElementsByTagName('input')[0]
 const content = document.getElementById('content')
 
-let socket = io.connect('https://socket-fqklvpd0h-letterpaulsand.vercel.app/');
+let socket = io.connect('https://socket-chat-ashy.vercel.app/');
 
 socket.on('connect', () => {
     socket.on('sendOnlinePeople', data=>{
