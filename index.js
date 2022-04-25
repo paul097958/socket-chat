@@ -47,3 +47,5 @@ io.on('connection', client => {
 
 
 io.listen(8000);
+
+app.listen(3000);
