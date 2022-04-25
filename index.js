@@ -1,3 +1,21 @@
+const express = require('express')
+const app = express()
+const path = require('path')
+
+app.get('/', (req, res) => {
+    res.sendFile('./src/index.html')
+})
+
+
+app.get('/index.js', (req, res) => {
+    res.sendFile('./src/index.js')
+})
+
+
+app.get('/index.css', (req, res) => {
+    res.sendFile('./src/index.css')
+})
+
 const server = require('http').createServer();
 const io = require('socket.io')(server, {
     cors: {
